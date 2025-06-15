@@ -1,37 +1,4 @@
-// const loadProduct=()=>{
-//     fetch(`www.thecocktaildb.com/api/json/v1/1/search.php?s=`)
-//     .then((res)=>res.json())
-//     .then((data)=>{
-//         display(data);
-//     });
 
-// };
-
-// window.onload = () => {
-//   fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=`)
-//     .then(res => res.json())
-//     .then(data => display(data.drinks));
-// }
-
-
-// const display=(elements)=>{
-//      console.log(elements);
-//     const productContainer=document.getElementById("product-container");
-   
-//     elements.forEach(element => {
-//         const div=document.createElement("div");
-//         div.innerHTML=`
-//         <img class="card-img" src=${product.image} alt="" />
-//         <h5>${product.title.slice(0,50)}</h5>
-//         <h3>${product.price}</h3>
-//         <p>${product.description.slice(0,50)}</p>
-//         <button onclick="singleProduct('${product.id}')" >Details</button>
-//         <button onclick="handleAddtoCart('${product.title}', 
-//         '${product.price}')">ADD To Cart</button>
-// `
-        
-//     });
-// }
 
 window.onload = () => {
   fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
