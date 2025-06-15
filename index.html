@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      
+
+  <div class="search-container">
+    <input type="text" id="search-field" />
+    <button class="bt1" id="handleADD" onclick="searchDrink()">Search</button>
+  </div>
+
+    <div class="main-container">
+        <div id="product-container" class="product-container">
+
+        </div>
+        <div id="cart-container" class="cart-container">
+          <h4>Total: <span id="count">0</span></h4>
+          <div class="tag">
+          <h4>SL No</h4>
+          <h4>Img</h4>
+          <h4 class="n">Name</h4>
+          </div>
+          
+        </div>
+    </div>
+
+
+    <div id="product-modal" class="modal">
+     <div class="modal-content">
+        
+        <span class="close" onclick="closeModal()" >&times;</span>
+         <h2 id="modal-title"></h2>
+         <img id="modal-img" src="" alt="">
+         <p class="d">Details: </p>
+         <p id="modal-category"></p>
+         <p id="alco"></p>
+         <p id="modal-instruction"></p>
+    </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
